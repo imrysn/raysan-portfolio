@@ -943,6 +943,11 @@ span {
         grid-template-columns: repeat(2,1fr);
         margin: 0 5rem;
     }
+    .skills .container { 
+        grid-template-columns: repeat(2, 1fr); 
+        padding: 1rem 30px; 
+        gap: 2rem; 
+    }
 }
 
 @media(max-width:991px){
@@ -969,6 +974,89 @@ span {
     .skills {
         padding-bottom: 7rem;
     }
+    .skills .container { 
+        grid-template-columns: repeat(1,1fr); 
+        padding: 1rem 5%; 
+        max-width: 90%; 
+        margin: 0 auto; 
+    }
+    .skill-box {
+        padding: 4rem;
+        min-height: auto; 
+    }
+    .skill-box .skill-title h3 {
+        font-size: 20px; 
+    }
+    .skill-box .skill-title p {
+        font-size: 13px;
+    }
+    .about-container {
+        grid-template-columns: 1fr; 
+        gap: 5rem; 
+        padding: 0 5%; 
+    }
+
+    .about-content {
+        grid-column: 1;
+        width: 100%; 
+        margin-left: 0; 
+        text-align: center; 
+    }
+    .about-content h3 {
+        font-size: 2.2rem;
+        margin-top: 3rem;
+        display: block; 
+        width: fit-content; 
+        margin-left: auto;
+        margin-right: auto; 
+    }
+    .about-content p {
+        font-size: 1.6rem;
+        line-height: 1.7;
+        margin-top: 1rem;
+        width: 100%; 
+        margin-left: auto; 
+        margin-right: auto; 
+        text-align: center; 
+    }
+
+    .about-panel {
+        position: static; 
+        transform: translateY(0);
+        justify-self: center; 
+        padding-left: 0;
+        margin-top: 5rem; 
+        width: 100%; 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; 
+        align-items: center; 
+    }
+
+    .about-panel .card {
+        max-width: 250px; 
+        margin: 1rem;
+        height: 150px; 
+        transform: scale(1); 
+        filter: brightness(1); 
+    }
+    .about-panel input:checked + label.card {
+        width: 280px; 
+        transform: scale(1.1); 
+    }
+    .about-panel .card > .row > .description {
+        width: auto; 
+        height: auto; 
+        padding: 0 5px; 
+    }
+    .about-panel .card .description p {
+        font-size: 1.1rem; 
+    }
+    .about-panel .card .description h4 {
+        font-size: 1.5rem;
+        margin-left: 5px; 
+    }
+}
     .projects .wrapper {
         grid-template-columns: repeat(1,1fr);
     }
@@ -978,7 +1066,6 @@ span {
     .footer {
         padding: 2rem 3%;
     }
-}
 
 @media(max-width:895px) {
     body, html {
@@ -1007,67 +1094,56 @@ span {
     
     .home {
         flex-direction: column-reverse;
-        margin: 5rem 20rem;
+        margin: 5rem 0; 
     }
 
     .home-content h3{
         font-size: 2rem;
-
     }
     .home-content h1{
-        font-size: 6rem;
+        font-size: 5rem; 
         margin-top: 0;
     }
 
     .home-img img{
-        width: 56vw;
-    }
-    
-    .about-container{
-        grid-template-columns: auto;
-        width: 50%;
-        padding: 0 5%;
+        width: 70vw; 
     }
 
-    .about-panel {
-        margin-left: 20px;
-        width: 50%;
-        text-align: center;
-    }
-    .card {
-        background-size: 100% 100% 1%;
-        background-repeat: no-repeat;
-        height: 30vh;
-    }
-    .about-content p{
-        margin-top: 0;
-        width: 50%;
-        margin-left: 20px;
-    }
-    .about-content h3 {
-        font-size: 2.2rem; 
-        margin-top: 3rem;
-    }
 
-    .about-content p {
-        font-size: 1.6rem; 
-        line-height: 1.7;
-    }
-
-    .skills h2{
-        margin-bottom: 3rem;
-    }
-    .container {
-        grid-template-columns: repeat(1,1fr);
-    }
-    .home h2 ,.skills h2,.education h2,.projects h2,.contact h2 {
-        font-size: 6rem;
+    .home h2, .skills h2, .education h2, .projects h2, .contact h2 {
+        font-size: 5rem; 
     }
     .project-item h2{
-        font-size: 4rem;
+        font-size: 3rem; 
     }
     .contact form textarea,
     .contact form .input-box input{
-        width: 80%;
+        width: 90%; 
+        margin: 1rem auto; 
+    }
+}
+
+
+@media (max-width: 500px) {
+    .modal-content {
+        width: 95%;
+        padding: 20px;
+    }
+    .modal-content h3 {
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+    }
+    .modal-content p {
+        font-size: 1.4rem;
+    }
+    .modal-links .btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 1.5rem;
+        margin: 0.5rem;
+    }
+    .close-button {
+        font-size: 2.5rem;
+        top: 10px;
+        right: 15px;
     }
 }
