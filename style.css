@@ -1056,7 +1056,6 @@ span {
         font-size: 1.5rem;
         margin-left: 5px; 
     }
-}
     .projects .wrapper {
         grid-template-columns: repeat(1,1fr);
     }
@@ -1066,6 +1065,7 @@ span {
     .footer {
         padding: 2rem 3%;
     }
+}
 
 @media(max-width:895px) {
     body, html {
