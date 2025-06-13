@@ -114,7 +114,7 @@ span {
     transition: 0.4s ease-in-out;
 }
 .home-img img:hover {
-    content: url('/assets/akatsuki1.png');
+    content: url('assets/akatsuki1.png');
     box-shadow:  0 0 25px var(--main-color),
                  0 0 50px var(--main-color),
                  0 0 100px var(--main-color);
